@@ -3,10 +3,10 @@ from gensim.models import LdaModel, CoherenceModel, LsiModel
 import pickle
 import matplotlib.pyplot as plt
 
-CORPUS_FILE_PATH = 'SRS Topic Models/Corpora/'
-DICTIONARY_FILE_PATH = 'SRS Topic Models/Dictionaries/'
-PROCESSED_TEXT_FILE_PATH = 'SRS Topic Models/Processed Text/'
-file_name = 'alaska'
+CORPUS_FILE_PATH = 'SRSTopicModels/Corpora/'
+DICTIONARY_FILE_PATH = 'SRSTopicModels/Dictionaries/'
+PROCESSED_TEXT_FILE_PATH = 'SRSTopicModels/ProcessedText/'
+file_name = 'srs'
 corpus_file_name = file_name + "_srs_corpus"
 dictionary_file_name = file_name + "_srs_dictionary"
 texts_file_name = file_name + "_text"
@@ -42,4 +42,5 @@ if __name__ == '__main__':
     topic_number = int(input("Enter the number of topics with the desired coherence score:"))
     print("You have selected to save the LSA model with "+str(topic_number)+" topics and coherence of: "+str(
         coherence_values[topic_number-1]))
-    lsa_model_list[topic_number-1].save("SRS Topic Models/LSA TOPIC MODELS/"+file_name+"_lsa")
+    lsa_model_list[topic_number-1].save("SRSTopicModels/LSA_TOPIC_MODELS/"+file_name+"_lsa")
+    

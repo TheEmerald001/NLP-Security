@@ -10,6 +10,8 @@ from gensim import corpora
 from gensim.utils import simple_preprocess
 from nltk.corpus import stopwords
 
+print ("Running text processing to clean up file")
+
 stopWords = stopwords.words('english')
 stopWords.extend(["from", "subject", "re", "edu", "use"])
 nlp = spacy.load("en_core_web_sm", disable=["parser,ner"])
@@ -104,3 +106,5 @@ file = open(PROCESSED_TEXT_FILE_PATH + texts_file_name, 'wb')
 
 # SAVES TEXT AS BYTES IN A FILE TO BE LOADED AGAIN WHEN NEEDED
 pickle.dump(lemma, file)
+
+print ("Text processing done")

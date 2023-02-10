@@ -6,12 +6,13 @@ This tool allows you to identify vulnerabilities in system and software designs 
 * `pip install -r requirements.txt`
   
 ### STEPS TO RUN The Topic Modeling Tool
-1. **Note:** Once finished running on a given SRS document, I recommend saving the SRS topic models, the corpuses, dictionaries, and processed text and similarity results to a separate folder. Before creating another run on another SRS document. This is so only the pertinent information for the given SRS document is present. This should not affect performance if one does not save their export their results to a different folder, but I still recommend doing so.
+1. **Note:** Once finished running on a given SRS document, I recommend saving the SRS topic models, the corpuses, dictionaries, and processed text and similarity results to a separate folder. Before creating another run on another SRS document. This is so only the pertinent information for the given SRS document is present. This should not affect performance if one does not save their export results to a different folder, but I still recommend doing so.
    
-2. **Note:** This  version  is ready to run for Demonstration purposes. It utilizes an SRS documents uploaded to the SRS/SRS_Dcuments folder. So if wanted you can follow along and do a test run without needing to replace any variables.
+2. **Note:** This  version  is ready to run for Demonstration purposes. It utilizes an SRS documents uploaded to the SRS/SRS_Dcuments folder. So if you want, you may follow along and do a test run without needing to replace any variables.
      
 ### 1.SRS DOCUMENT TEXT PREPROCESSING STEPS
-* Step 1 is conducted in order to clean up the text data that will be used in the topic models. Particularly this step will help in generating the corpus, dictionary, and cleaned text that will be used by the topic model. 
+* Step 1 is conducted in order to clean up the text data that will be used in the topic models.
+ Particularly, this step will help in generating the corpus, dictionary, and cleaned text that will be used by the topic model. 
 * Have the desired SRS document (that will be topic modelled) inserted into the folder SRS/SRS Documents.</br>
 * Once the srs document has been placed into the folder, modify the SRS Text Preprocessing python file.
 * Modify the following variables: <br />
