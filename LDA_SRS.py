@@ -26,6 +26,9 @@ limit = 40
 coherence_values = []
 lda_model_list = []
 if __name__ == '__main__':
+    limit = 40
+    start = 1
+    step = 1
     # Create LDA MODELS
     for x in range(start, limit, step):
         lda_model = LdaModel(corpus=corpus, id2word=id2word, num_topics=x, random_state=100,
@@ -35,9 +38,6 @@ if __name__ == '__main__':
         coherence_values.append(coherence_model_lda.get_coherence())
         print("Num Topics = "+str(x)+" Coherence Score = "+str(round(coherence_model_lda.get_coherence(), 4)))
 
-    limit = 40
-    start = 1
-    step = 1
     x = range(start, limit, step)
     plt.plot(x, coherence_values)
     plt.xlabel("Number of topics")
