@@ -28,7 +28,8 @@ if __name__ == '__main__':
         coherence_model_lsa = CoherenceModel(model=lsa_model, texts=processed_text, dictionary=id2word, coherence='c_v')
         lsa_model_list.append(lsa_model)
         coherence_values.append(coherence_model_lsa.get_coherence())
-        print("Num Topics = "+str(len(lsa_model.get_topics()))+" Coherence Score = "+str(round(coherence_model_lsa.get_coherence(),4)))
+        # print("Num Topics = "+str(len(lsa_model.get_topics()))+" Coherence Score = "+str(round(coherence_model_lsa.get_coherence(), 4)))
+        print("Num Topics = "+str(x)+" Coherence Score = "+str(round(coherence_model_lsa.get_coherence(), 4)))
 
     limit = 40
     start = 1
